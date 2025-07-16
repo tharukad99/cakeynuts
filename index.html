@@ -1,26 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Welcome to Azure Hosting</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cakey Nuts</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      background: #f0f4f8;
-      color: #333;
+      background-color: #fff8f2;
+      color: #4b2e2e;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #f7c59f;
+      padding: 40px 20px;
       text-align: center;
-      padding-top: 100px;
     }
-    h1 {
-      color: #0078d4;
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    p {
-      font-size: 18px;
+    nav {
+      background-color: #e59f71;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 50px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .products img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      margin: 20px 0;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .contact button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #f7c59f;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #4b2e2e;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <h1>I Love CakeyNuts 😍😍</h1>
-  <p>This HTML page is successfully hosted on Azure Blob Storage!</p>
+
+<header>
+  <h1>🍰 Cakey Nuts</h1>
+  <p>Deliciously Nutty Cakes for Every Occasion</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>
+    Welcome to Cakey Nuts! We specialize in handmade cakes infused with the richness of nuts and love.
+    Whether you’re celebrating a birthday, wedding, or just craving something sweet — we’re here to bake your day better.
+  </p>
+</section>
+
+<section id="products" class="products">
+  <h2>Our Bestsellers</h2>
+  <img src="https://via.placeholder.com/800x400?text=Nutty+Chocolate+Cake" alt="Nutty Chocolate Cake">
+  <img src="https://via.placeholder.com/800x400?text=Almond+Butter+Cupcakes" alt="Almond Butter Cupcakes">
+  <p>Explore our full range of cakes, cupcakes, brownies and custom nut-infused desserts!</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Get in Touch</h2>
+  <p>Want to place an order or ask us a question? We'd love to hear from you!</p>
+  <form>
+    <input type="text" placeholder="Your Name" required />
+    <input type="email" placeholder="Your Email" required />
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Cakey Nuts. Baked with ❤️</p>
+</footer>
+
 </body>
 </html>

@@ -41,7 +41,7 @@ Bootstrap 5 HTML CSS Template
                     <div class="container">
                         <a class="navbar-brand d-flex align-items-center" href="index.html">
                             <img src="images/coffee-beans.png" class="navbar-brand-image img-fluid" alt="">
-                            Barista.co
+                            Cackey
                         </a>
         
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,7 +73,7 @@ Bootstrap 5 HTML CSS Template
 
                             <div class="ms-lg-3">
                                 <a class="btn custom-btn custom-border-btn" href="reservation.html">
-                                    Reservation
+                                    Order Now
                                     <i class="bi-arrow-up-right ms-2"></i>
                                 </a>
                             </div>
@@ -90,35 +90,36 @@ Bootstrap 5 HTML CSS Template
                             <div class="booking-form-wrap">
                                 <div class="row">
                                     <div class="col-lg-7 col-12 p-0">
-                                        <form class="custom-form booking-form" action="#" method="post" role="form">
+                                        <form id="order-form" class="custom-form booking-form" action="#" method="post" role="form">
                                             <div class="text-center mb-4 pb-lg-2">
-                                                <em class="text-white">Fill out the booking form</em>
+                                                <em class="text-white">Fill out the ordering form</em>
 
-                                                <h2 class="text-white">Book a table</h2>
+                                                <h2 class="text-white">Order a Cake</h2>
                                             </div>
 
                                             <div class="booking-form-body">
                                                 <div class="row">
                                                     <div class="col-lg-6 col-12">
-                                                        <input type="text" name="booking-form-name" id="booking-form-name" class="form-control" placeholder="Full Name" required>
+                                                        <input type="text" id="name" name="name" id="booking-form-name" class="form-control" placeholder="Full Name" required>
                                                     </div>
 
                                                     <div class="col-lg-6 col-12">
-                                                        <input type="tel" class="form-control" name="booking-form-phone" placeholder="Phone: 085 456 7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required="">
+                                                        <input type="tel" class="form-control" name="mobile" placeholder="Phone: 085 456 7890" required> 
+                                                        <!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" -->
+                                                    </div>
+
+                                                     <div class="col-lg-6 col-12">
+                                                        <input class="form-control" type="time" name="time" value="18:30">
                                                     </div>
 
                                                     <div class="col-lg-6 col-12">
-                                                        <input class="form-control" type="time" name="booking-form-time" value="18:30">
-                                                    </div>
-
-                                                    <div class="col-lg-6 col-12">
-                                                        <input type="date" name="booking-form-date" id="booking-form-date" class="form-control" placeholder="Date" required="">
+                                                        <input type="date" name="date" id="booking-form-date" class="form-control" placeholder="Date" required="">
                                                     </div>
 
                                                     <div class="col-lg-12 col-12">
-                                                        <input type="number" name="booking-form-number" id="booking-form-number" class="form-control" placeholder="Number of People" required="">
+                                                        <input type="number" name="number" id="booking-form-number" class="form-control" placeholder="Number of Cake" required="">
 
-                                                        <textarea name="booking-form-message" rows="3" class="form-control" id="booking-form-message" placeholder="Comment (Optional)"></textarea>
+                                                        <textarea name="message" rows="3" class="form-control" id="booking-form-message" placeholder="Comment (Optional)"></textarea>
                                                     </div>
 
                                                     <div class="col-lg-4 col-md-10 col-8 mx-auto mt-2">
@@ -153,22 +154,22 @@ Bootstrap 5 HTML CSS Template
 
                                 <strong class="text-white">
                                     <i class="bi-geo-alt me-2"></i>
-                                    Bandra West, Mumbai, Maharashtra 400050, India
+                                    Wigan
                                 </strong>
 
                                 <ul class="social-icon mt-4">
                                     <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-facebook">
+                                        <a href="https://www.facebook.com/share/1CSHp6v94s/?mibextid=wwXIfr" target="_new" class="social-icon-link bi-facebook">
                                         </a>
                                     </li>
         
                                     <li class="social-icon-item">
-                                        <a href="https://x.com/minthu" target="_new" class="social-icon-link bi-twitter">
+                                        <a href="https://instagram.com/cakey_nuts?igshid=yi77w1rzo68o" target="_new" class="social-icon-link bi-instagram">
                                         </a>
                                     </li>
 
                                     <li class="social-icon-item">
-                                        <a href="#" class="social-icon-link bi-whatsapp">
+                                        <a href="https://wa.me/+94772960130" target="_new" class="social-icon-link bi-whatsapp">
                                         </a>
                                     </li>
                                 </ul>
@@ -180,8 +181,8 @@ Bootstrap 5 HTML CSS Template
                                 <p class="d-flex mb-1">
                                     <strong class="me-2">Phone:</strong>
                                     <a href="tel: 305-240-9671" class="site-footer-link">
-                                        (65) 
-                                        305 2409 671
+                                        +(94) 
+                                        77 296 0130
                                     </a>
                                 </p>
 
@@ -189,7 +190,7 @@ Bootstrap 5 HTML CSS Template
                                     <strong class="me-2">Email:</strong>
 
                                     <a href="mailto:info@yourgmail.com" class="site-footer-link">
-                                        hello@barista.co
+                                        ciastocakey67@gmail.com
                                     </a>
                                 </p>
                             </div>
@@ -200,13 +201,13 @@ Bootstrap 5 HTML CSS Template
 
                                 <ul class="opening-hours-list">
                                     <li class="d-flex">
-                                        Monday - Friday
-                                        <span class="underline"></span>
+                                        24/7
+                                        <!-- <span class="underline"></span> -->
 
-                                        <strong>9:00 - 18:00</strong>
+                                        <!-- <strong>9:00 - 18:00</strong> -->
                                     </li>
 
-                                    <li class="d-flex">
+                                    <!-- <li class="d-flex">
                                         Saturday
                                         <span class="underline"></span>
 
@@ -218,15 +219,14 @@ Bootstrap 5 HTML CSS Template
                                         <span class="underline"></span>
 
                                         <strong>Closed</strong>
-                                    </li>
+                                    </li> -->
                                 </ul>
                             </div>
 
                             <div class="col-lg-8 col-12 mt-4">
-                                <p class="copyright-text mb-0">Copyright © Barista Cafe 2048 
-                                    - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p>
+                                <p class="copyright-text mb-0">Copyright © Cakey Nuts 2025 
+                                    <!-- - Design: <a rel="sponsored" href="https://www.tooplate.com" target="_blank">Tooplate</a></p> -->
                             </div>
-
                     </div>
                 </footer>
             </main>
@@ -238,6 +238,9 @@ Bootstrap 5 HTML CSS Template
         <script src="js/jquery.sticky.js"></script>
         <script src="js/vegas.min.js"></script>
         <script src="js/custom.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script src="js/sendEmail.js"></script>
 
     </body>
 </html>

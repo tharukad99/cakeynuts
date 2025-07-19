@@ -898,7 +898,7 @@ strong {
   CUSTOM FORM               
 -----------------------------------------*/
 .custom-form .form-control {
-  color: var(--p-color);
+  color: var(--white-color);
   border-radius: var(--border-radius-small);
   margin-bottom: 30px;
   padding-top: 13px;
